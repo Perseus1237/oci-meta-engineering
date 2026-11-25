@@ -1,0 +1,15 @@
+{
+  "blueprint": "invoice-intake",
+  "customer": "Juniper Wholesale",
+  "user": "Receiving clerk",
+  "decision": "Which invoices have enough legible information for entry?",
+  "deliverable": "An invoice intake queue with a route, reasons and page-level evidence.",
+  "settings": {
+    "required_fields": [
+      "VendorName",
+      "InvoiceId",
+      "InvoiceTotal"
+    ],
+    "min_confidence": 0.85
+  }
+}

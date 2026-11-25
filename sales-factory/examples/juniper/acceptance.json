@@ -1,0 +1,20 @@
+[
+  {
+    "id": "complete",
+    "sample": "complete.json",
+    "expect": {
+      "route": "Ready for entry",
+      "issues": []
+    }
+  },
+  {
+    "id": "faded-total",
+    "sample": "faded-total.json",
+    "expect": {
+      "route": "Needs review",
+      "issues": [
+        "InvoiceTotal: low confidence"
+      ]
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "matched-po",
+    "sample": "matched-po.json",
+    "expect": {
+      "route": "Ready for entry",
+      "issues": []
+    }
+  },
+  {
+    "id": "missing-po",
+    "sample": "missing-po.json",
+    "expect": {
+      "route": "Needs review",
+      "issues": [
+        "PurchaseOrder: missing"
+      ]
+    }
+  },
+  {
+    "id": "two-po-numbers",
+    "sample": "two-po-numbers.json",
+    "expect": {
+      "route": "Needs review",
+      "issues": [
+        "PurchaseOrder: conflicting values"
+      ]
+    }
+  }
+]

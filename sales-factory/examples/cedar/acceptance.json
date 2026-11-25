@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ready-repair-bill",
+    "sample": "ready-repair-bill.json",
+    "expect": {
+      "route": "Ready for entry",
+      "issues": []
+    }
+  },
+  {
+    "id": "two-invoice-numbers",
+    "sample": "two-invoice-numbers.json",
+    "expect": {
+      "route": "Needs review",
+      "issues": [
+        "InvoiceId: conflicting values"
+      ]
+    }
+  }
+]

@@ -1,0 +1,69 @@
+{
+  "pages": [
+    {
+      "pageNumber": 1,
+      "documentFields": [
+        {
+          "fieldType": "KEY_VALUE",
+          "fieldLabel": {
+            "name": "VendorName",
+            "confidence": 0.98
+          },
+          "fieldValue": {
+            "valueType": "STRING",
+            "text": "Sable Supply"
+          }
+        },
+        {
+          "fieldType": "KEY_VALUE",
+          "fieldLabel": {
+            "name": "InvoiceId",
+            "confidence": 0.99
+          },
+          "fieldValue": {
+            "valueType": "STRING",
+            "text": "HF-320"
+          }
+        },
+        {
+          "fieldType": "KEY_VALUE",
+          "fieldLabel": {
+            "name": "InvoiceTotal",
+            "confidence": 0.98
+          },
+          "fieldValue": {
+            "valueType": "STRING",
+            "text": "930.00"
+          }
+        },
+        {
+          "fieldType": "KEY_VALUE",
+          "fieldLabel": {
+            "name": "PurchaseOrder",
+            "confidence": 0.99
+          },
+          "fieldValue": {
+            "valueType": "STRING",
+            "text": "PO-732"
+          }
+        }
+      ]
+    },
+    {
+      "pageNumber": 2,
+      "documentFields": [
+        {
+          "fieldType": "KEY_VALUE",
+          "fieldLabel": {
+            "name": "PurchaseOrder",
+            "confidence": 0.96
+          },
+          "fieldValue": {
+            "valueType": "STRING",
+            "text": "PO-723"
+          }
+        }
+      ]
+    }
+  ]
+}

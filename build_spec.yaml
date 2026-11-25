@@ -6,9 +6,9 @@ failImmediatelyOnError: true
 
 steps:
   - type: Command
-    name: Test the factory and replay the ownership tickets
+    name: Verify the SE factory and replay customer engagements
     command: |
       set -eu
       cd "${OCI_PRIMARY_SOURCE_DIR}"
       python3 -B -m unittest discover -s tests -v
-      python3 -B demo.py
+      python3 -B se_factory.py demo

@@ -1,0 +1,9 @@
+{
+  "demo_entry": "solution.py",
+  "files": [
+    "solution.py",
+    "policy.py",
+    "report.html",
+    "README.md"
+  ]
+}

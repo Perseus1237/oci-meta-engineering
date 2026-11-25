@@ -1,6 +1,9 @@
-.PHONY: demo test
+.PHONY: demo infra-demo test
 
 demo:
+	python3 -B se_factory.py demo
+
+infra-demo:
 	python3 -B demo.py
 
 test:

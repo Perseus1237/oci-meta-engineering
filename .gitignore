@@ -1,4 +1,5 @@
 build/
+sales-factory/engagements/
 __pycache__/
 *.pyc
 .DS_Store

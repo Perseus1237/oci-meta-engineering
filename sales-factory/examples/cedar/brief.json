@@ -1,0 +1,14 @@
+{
+  "blueprint": "invoice-intake",
+  "customer": "Cedar Repairs",
+  "user": "Service desk bookkeeper",
+  "decision": "Can we catch inconsistent invoice numbers before a clerk enters a repair bill?",
+  "deliverable": "An invoice intake queue with a route, reasons and page-level evidence.",
+  "settings": {
+    "required_fields": [
+      "InvoiceId",
+      "InvoiceTotal"
+    ],
+    "min_confidence": 0.88
+  }
+}

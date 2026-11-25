@@ -1,0 +1,16 @@
+{
+  "blueprint": "invoice-intake",
+  "customer": "Harbor Field Services",
+  "user": "Accounts payable lead",
+  "decision": "Which supplier invoices need a purchase-order check before entry?",
+  "deliverable": "An invoice intake queue with a route, reasons and page-level evidence.",
+  "settings": {
+    "required_fields": [
+      "VendorName",
+      "InvoiceId",
+      "InvoiceTotal",
+      "PurchaseOrder"
+    ],
+    "min_confidence": 0.9
+  }
+}
