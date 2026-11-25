@@ -1,0 +1,86 @@
+{
+  "format_version": "1.2",
+  "terraform_version": "1.5.7",
+  "resource_changes": [
+    {
+      "address": "oci_objectstorage_bucket.pilot",
+      "mode": "managed",
+      "type": "oci_objectstorage_bucket",
+      "name": "pilot",
+      "provider_name": "registry.terraform.io/oracle/oci",
+      "change": {
+        "actions": [
+          "update"
+        ],
+        "before": {
+          "access_type": "NoPublicAccess",
+          "approximate_count": "0",
+          "approximate_size": "0",
+          "auto_tiering": "Disabled",
+          "bucket_id": "ocid1.bucket.oc1.iad.fixture",
+          "compartment_id": "ocid1.compartment.oc1..fixture",
+          "created_by": "ocid1.user.oc1..fixture",
+          "defined_tags": {},
+          "etag": "fixture",
+          "freeform_tags": {
+            "environment": "dev"
+          },
+          "id": "n/fixture/b/oci-meta-fixture",
+          "is_read_only": false,
+          "kms_key_id": null,
+          "metadata": null,
+          "name": "oci-meta-fixture",
+          "namespace": "fixture",
+          "object_events_enabled": false,
+          "object_lifecycle_policy_etag": null,
+          "replication_enabled": false,
+          "retention_rules": [],
+          "storage_tier": "Standard",
+          "time_created": "2025-01-01T00:00:00Z",
+          "timeouts": null,
+          "versioning": "Disabled"
+        },
+        "after": {
+          "access_type": "NoPublicAccess",
+          "approximate_count": "0",
+          "approximate_size": "0",
+          "auto_tiering": "Disabled",
+          "bucket_id": "ocid1.bucket.oc1.iad.fixture",
+          "compartment_id": "ocid1.compartment.oc1..fixture",
+          "created_by": "ocid1.user.oc1..fixture",
+          "defined_tags": {},
+          "etag": "fixture",
+          "freeform_tags": {
+            "environment": "dev",
+            "owner": "cloud-platform"
+          },
+          "id": "n/fixture/b/oci-meta-fixture",
+          "is_read_only": false,
+          "kms_key_id": null,
+          "metadata": null,
+          "name": "oci-meta-fixture",
+          "namespace": "fixture",
+          "object_events_enabled": false,
+          "object_lifecycle_policy_etag": null,
+          "replication_enabled": false,
+          "retention_rules": [],
+          "storage_tier": "Standard",
+          "time_created": "2025-01-01T00:00:00Z",
+          "timeouts": null,
+          "versioning": "Disabled"
+        },
+        "after_unknown": {},
+        "before_sensitive": {
+          "defined_tags": {},
+          "freeform_tags": {},
+          "retention_rules": []
+        },
+        "after_sensitive": {
+          "defined_tags": {},
+          "freeform_tags": {},
+          "retention_rules": []
+        }
+      }
+    }
+  ]
+}

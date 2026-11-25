@@ -1,0 +1,14 @@
+version: 0.1
+component: build
+timeoutInSeconds: 600
+shell: bash
+failImmediatelyOnError: true
+
+steps:
+  - type: Command
+    name: Test the factory and replay the ownership tickets
+    command: |
+      set -eu
+      cd "${OCI_PRIMARY_SOURCE_DIR}"
+      python3 -B -m unittest discover -s tests -v
+      python3 -B demo.py

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "preserve-existing-tags",
+    "tags": {"environment": "dev", "cost-center": "42"},
+    "expected": {"environment": "dev", "cost-center": "42", "owner": "cloud-platform"}
+  },
+  {
+    "id": "empty-map",
+    "tags": {},
+    "expected": {"owner": "cloud-platform"}
+  },
+  {
+    "id": "already-owned",
+    "tags": {"owner": "cloud-platform"},
+    "expected": {"owner": "cloud-platform"}
+  },
+  {
+    "id": "owner-conflict",
+    "tags": {"owner": "another-team"},
+    "error": "existing owner differs"
+  },
+  {
+    "id": "unknown-expression",
+    "tags": "${local.external_tags}",
+    "error": "unsupported tag expression"
+  },
+  {
+    "id": "shared-team-tags",
+    "tags": "${var.common_tags}",
+    "expected": "${merge({owner = \"cloud-platform\"}, var.common_tags)}"
+  }
+]
